@@ -1,0 +1,434 @@
+@charset "UTF-8";
+
+html{
+    margin:0;
+    padding:0;
+}
+ul, li{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-size: 14px;
+    font-family:  Helvetica, sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+.logo{
+    float: left;
+    width: 50%;
+}
+.logo img{
+    width:150px ;
+    height: 150px;
+}
+
+.logo a.a3{
+    margin-left: 35px;
+}
+.logo a img{
+    height: 100px;
+    background-color: #000000;
+}
+.logo a.a3 img{
+    height: 100px;
+}
+
+.account{
+    float: left;
+    width: 50%;
+    text-align: right;
+    margin-top: 50px;
+}
+
+.top-header{
+    padding: 0px 0px;
+}
+
+.account span{
+    color: #f36f21;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.account a {
+    padding: 8px 16px;
+    color: #fff;
+    background: #ff9b39;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-left: 17px;
+}
+.account a.btn1,a.btn2{
+    color:black;
+}
+.account a.btn1:hover{
+    color:#fff;
+    text-decoration: none;
+}
+.account a.btn2:hover{
+    color:#fff;
+    text-decoration: none;
+}
+
+
+.main-menu{
+    background: #c9c3ab;
+
+
+}
+
+
+.main-menu .container ul li { /* thằng cha */
+    float: left; /* nhảy lên cùng 1 dòng*/
+    list-style: none;
+    position: relative;
+    
+
+}
+.main-menu .container ul li.active a{
+    color: #fff;
+    background-color: #ff9b39;
+}
+.main-menu ul li a:hover{
+    background-color: #ff9b39;
+    text-decoration: none;
+}
+
+.main-menu .container ul li:hover a{
+    color: #fff;
+    background: #ff9b39;
+}
+
+.main-menu .container ul li a{
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 10px 17px;
+    display: inline-block; /* chuyển thành block để padding */
+    color: #333;
+}
+
+/* chia cột menu đa cấp ul li thì thằng lớp cha sẽ cho relative, còn thằng con sẽ cho absolute*/
+
+.main-menu .container ul li ul{ /* thằng con bỏ absolute vô thì nó sẽ xuống dòng,ở quanh thằng cha*/
+    position: absolute;
+    width: 200px;
+    background: #ff9b39;
+    /* display: none;  ẩn các thẻ ở dưới nó đi */
+    visibility: hidden; 
+    transition: all .3s;    /*thay đổi hiệu ứng*/
+    opacity: 0;
+    top:50px;
+    
+}
+
+.main-menu .container ul li ul li{
+    width: 100%;
+
+}
+
+.main-menu .container ul li ul a{
+    
+    color: #fff;
+    text-transform: capitalize;  /*Chỉ cho 1 ký tự đầu tiên là ghi hoa*/
+}
+
+.main-menu .container ul li:hover ul{
+    visibility: visible; /*Hover vào cái li thì ul con sẽ hiện lên*/
+    opacity: 1; /* thuộc tính opacity chạy từ 0->1 : 0 là ko thấy gì, 1 là hiện rõ nhất */
+    top:38px;   /* tạo hiệu ứng chuyển động lên cho cái menu con*/
+    z-index: 9999;
+}
+/* chỉ khi nào có position mới dùng được thuộc tính z-index:9999; -> để hiển thị vùng đó đè lên vùng khác nó */
+  /* position: fixed; dùng để xét vị trí tương đối đối với màn hình, giữ nguyên vị trí hiển thị trên web */
+
+.albout{
+    margin: 30px 0; /* trên dưới 30px , trái phải 0*/
+}
+
+.albout h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.al-content .video{
+    float: left;
+    width: 50%;
+    margin-right: 20px;
+}
+
+.al-content .info p{
+    font-size: 15px;
+    line-height: 20px;   /* dòng cách dòng là 20px*/
+    margin-bottom: 20px; /* văn bản trên cách văn bản dưới 1 đoạn 20px*/
+    text-align: justify; /* thẻ canh đều các đoạn văn bản*/
+}
+
+.al-content .info a{
+    text-decoration: none;
+    background: #ff9b39;
+    color: black;
+    padding: 5px 10px;
+    display:inline-block; /*Thành phần sẽ hiển thị như một khối, nhưng là một khối nội tuyến.*/
+    margin-right: 10px;
+    border-radius: 3px;
+}
+.al-content .info a.tv:hover{
+    color:white;
+}
+
+.al-content .info a.dk{
+    background: #c9c3ab;
+    color:black;
+    border: 1px solid #ededed;
+}
+.al-content .info a.dk:hover{
+    background:#ff9b39;
+    color:white;
+}
+
+.course{
+    margin: 30px 0;
+}
+.title-cs {
+    margin-bottom: 30px;
+}
+.title-cs a{
+    display: inline-block;
+    background: #fff;
+    color: #333;
+    border-radius: 3px;
+    padding: 10px 25px;
+    margin-right: 10px;
+    border: 1px solid #ededed;
+}
+
+.title-cs a.t1{         /* thuộc tính phía dưới luôn đè lên thuộc tính phía trên nên để lớp kh ở dưới*/
+    background:#ff9b39;
+    color: black;
+    text-decoration: none;
+}
+.title-cs a.t1:hover{
+    color:white;
+}
+
+.title-cs a.t2{
+    text-decoration: none;
+    background: #c9c3ab;
+    color:black;
+}
+.title-cs a.t2:hover{
+    background-color: #ff9b39;
+    color:white;
+}
+.content-course{
+    margin:0px -10px; /* vì ở dưới mỗi cái list padding vào 10px nên div.conten-course nó không thẳng hàng với title-cs
+    Vì thế chúng ta phải margin cho nó để căn dòng cho thẳng hàng*/
+
+}
+.content-course .list{
+    width: 25%;
+    float: left;
+    padding: 0 10px;
+    margin-bottom: 30px; /* khoảng cách trên dưới giữa 2 ảnh là 30px*/
+    box-sizing: border-box; 
+    /* bình thường khi code,mỗi ảnh chia kích thước 25% nhưng do có thêm 1% của mỗi cái border nên ảnh bị tràn,rớt dòng.
+    Vì thế chúng ta phải dùng thuộc tính box-sizing nghĩa là cái border nhập vào 25% của kích thước ảnh nên ảnh ko bị tràn*/
+
+    /* box-sizing: content-box;
+    có nghĩa là cái border nó phình ra bên ngoài */
+
+}
+
+.content-course .list h4{
+    text-align: center;
+    border: 1px solid #ededed;
+    padding: 10px;      /* tăng kích thước của dòng h4 lên*/
+    margin-top: 0px;
+    border-top : 0px;
+}
+.content-course .list h4 a{
+    color:#333;
+    text-decoration: none;
+}
+.content-course .list h4 a:hover{
+    color: #ff9b39;
+
+}
+
+.content-course .list img{
+    width: 100%;        /* chỉnh 100% để ảnh ko bị tách xuống dưới*/
+    margin-bottom: 0px;
+}
+
+.content-course .list img:hover{
+    opacity: 0.8;
+}
+
+.footer1{
+    background: gray;
+    height: 60px;
+}
+
+.footer1 .row1{
+    width: 70%;
+    float:left;
+    padding: 15px 0;
+    color: #fff;
+}
+input.email{
+    height: 30px;
+    border-radius: 0;
+    border: 1px solid #fff;
+}
+input.button{
+    background-color: #ff9b39;
+    border: none;   /* thuộc tính này để bỏ đi khung viền quanh nút button */
+    color: white;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    padding: 3px 29px;
+    border-radius: 0;
+    margin-left: -5px;
+} 
+
+
+.footer1 .row2{
+    width: 30%;
+    float: left;
+    padding-top: 15px;
+}
+
+input.key{
+    height: 30px;
+    border-radius: 0;
+    border: 1px solid #fff;
+}
+
+.footer1 .row2 button.find{
+    background-color: #ff9b39;
+    border: none;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0;
+    padding: 3px 8px;
+    margin-left: -4px;
+}
+.footer2 {
+    background: #c9c3ab;
+    margin-top:-6px;
+    height: 250px;
+}
+.footer2 .firstContent h4{
+    font-size: 20px;
+}
+
+.footer2 .firstContent{
+    line-height: 20px;
+    float:left;
+    width: 40%;
+}
+
+.footer2 .mylist{
+    float:left;
+    width: 30%;
+    line-height: 20px;
+}
+.footer2 .mylist h4{
+    font-size: 20px;
+}
+
+.footer2 .mylist ul{
+    list-style: none;
+}
+
+.footer2 .image{
+    float:left;
+    width: 30%;
+
+}
+.footer3{
+    background: #c9c3ab;
+    border-top: 1px solid gray;
+    max-width: 100%;
+}
+.footer3 .test{
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+a.i{
+    color:#ff9b39;
+}
+
+/*banner*/
+.carousel-inner img {
+    width: 100%;
+    height: 900px;
+}
+.carousel-caption {
+	position: absolute;
+	top: 50%;
+}
+.carousel-caption h1 {
+	font-size: 400%;
+	text-transform: uppercase;
+	text-shadow: 5px 5px 15px #000;
+}
+.carousel-caption h3 {
+	font-size: 200%;	
+	text-shadow: 2px 2px 10px #000;
+}
+
+.carousel-caption button.btn1{
+    background: #ff9b39;
+    border-radius: 4px;
+    border:none;
+    padding:5px 18px;
+    text-align: center;
+}
+
+.carousel-caption button.btn2{
+    background: white;
+    border-radius: 4px;
+    border:none;
+    padding:5px 18px;
+    text-align: center;
+    color:black;
+}
+.carousel-caption button.btn1:hover{
+    color:#fff;
+}
+
+.carousel-caption button.btn2:hover{
+    background:#ff9b39;
+    color:#fff;
+}
+
+.carousel-caption h1.display-2{
+    color:orange;
+}

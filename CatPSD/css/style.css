@@ -1,0 +1,1060 @@
+@charset "UTF-8";
+/*
+position:relative của một phần tử liên quan đến vị trí hiện tại của nó mà không thay đổi bố cục xung quanh vị trí đó, 
+trong khi position:absolute của một phần tử liên quan đến vị trí của bố mẹ và thay đổi bố cục xung quanh vị trí đó.
+*/
+body{
+    font-family:Tahoma, sans-serif;
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul{
+    padding: 0px;
+    margin:0px;
+}
+
+ul li{
+    list-style: none;
+    text-decoration: none;
+}
+
+#header{
+    width: 100%;
+    background:#fff;
+    height: 65px;
+    border-bottom: 2px solid #e3e7ed;
+}
+
+#header_margin{
+    width: 1427px;
+    margin:0px auto;
+    height: 65px;
+}
+
+#header_margin .header_margin_left{
+    float: left;
+    height: 65px;
+}
+
+#header_margin #menu1{
+    width: 517px;
+    margin-top: 22.5px;
+}
+#header_margin #menu1 ul li{
+    float: left;
+    margin-left: 20px;
+    text-decoration: none;
+}
+#header_margin #menu1 ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #424242;
+}
+
+#header_margin #menu1 ul li a:hover{
+    color: #0c4da2;
+    
+}
+
+#header_margin #logo img{
+    margin-top: 15px;
+    margin-left: 106.5px;
+}
+
+#header_margin #logo{
+    width: 393px;
+}
+#header_margin #menu2{
+    width: 360px;
+    margin-top: 22.5px;
+}
+#header_margin #menu2 ul{
+    margin-left: 20px;
+    text-decoration: blink;
+}
+#header_margin #menu2 ul li{
+    float: left;
+    margin-left: 20px;
+}
+#header_margin #menu2 ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #424242;
+}
+
+#header_margin #menu2 ul li a:hover{
+    color: #0c4da2;
+} 
+
+#header_margin #listicon{
+    width: 147px;
+}
+
+#header_margin #listicon img{
+    margin-top: 20px;
+    margin-left: 15px;
+
+}
+#header_margin #listicon img:hover{
+    color:  #424242;
+    
+}
+
+#clear{
+    float: left;
+}
+
+/*banner*/
+
+#container{
+    width: 1427px;
+    margin:0px auto;
+    height: 510px;
+}
+
+#container #introduce{
+    margin-top:10px;
+    width: 600px;
+}
+
+
+#container #introduce #h1,#h2{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+#container #introduce #ic{
+
+    display: inline-block;
+    margin-top: 30px;
+}
+
+
+
+#container #introduce #ic #h3{
+    margin-left: 8px;
+}
+
+#container #introduce_right{
+    width: 800px;
+}
+
+#container .left{
+    float: left;
+}
+#container #introduce #btn{
+    margin-top: 30px;
+}
+
+#container #introduce #btn a{
+    text-decoration: none;
+    color:#bdbbbb ;
+    padding: 7px 30px;
+    margin-left: 20px;
+    border: 2px solid #bdbbbb;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+#container #introduce #btn a:hover{
+    background:#afaeae; 
+    color:#797575 ;
+    transition: ease 2s;
+}
+
+/*Content*/
+
+/*begin container1*/
+#content #container1{
+    width: 1427px;
+    margin: 0 auto;
+    height: 428px;
+}
+
+#content h4{
+    text-align: center;
+    font-size: 28px;
+}
+
+/*list1*/
+#content #container1 #list1{
+    height: 168px;
+    margin-top:-10px;
+}
+#content #container1 #list1 #img1{
+    background: #f7f7f7;
+
+    width: 150px;
+    line-height: 168px;
+    text-align: center;
+}
+
+#content #container1 #list1 #img2,#img3,#img4,#img5,#img6,#img7,#img8{
+    background: #f7f7f7;
+    margin-left: 30px;
+    width: 150px;
+    line-height: 168px;
+    text-align: center;
+}
+
+
+
+#content #container1 #list1 #img1 #a1 img{
+    vertical-align:middle;      /* căn giữa hình ảnh theo chiều cao xác định line-height */
+}
+#content #container1 #list1 #img1:hover{
+    background:#bbb9b9;
+}
+#content #container1 #list1 #img2 #a2 img{
+    vertical-align:middle;      
+}
+#content #container1 #list1 #img2:hover{
+    background: #bbb9b9;
+}
+#content #container1 #list1 #img3 #a3 img{
+    vertical-align:middle;      
+}
+#content #container1 #list1 #img3:hover{
+    background: #bbb9b9;
+}
+#content #container1 #list1 #img4 #a4 img{
+    vertical-align:middle;      
+}
+#content #container1 #list1 #img4:hover{
+    background: #bbb9b9;
+}
+#content #container1 #list1 #img5 #a5 img{
+    vertical-align:middle;      
+}
+#content #container1 #list1 #img5:hover{
+    background: #bbb9b9;
+}
+#content #container1 #list1 #img6 #a6 img{
+    vertical-align:middle;      
+}
+#content #container1 #list1 #img6:hover{
+    background: #bbb9b9;
+}
+#content #container1 #list1 #img7 #a7 img{
+    vertical-align:middle;      
+}
+#content #container1 #list1 #img7:hover{
+    background: #bbb9b9;
+}
+#content #container1 #list1 #img8 #a8 img{
+    vertical-align:middle;      
+}
+#content #container1 #list1 #img8:hover{
+    background: #bbb9b9;
+}
+
+
+#content #container1 #list1 .list_left{
+    float: left;
+}
+
+/*list2*/
+#content #container1 #list2{
+   height: 168px;
+   margin-top: 30px;
+}
+#content #container1 #list2 #img1{
+    background: #f7f7f7;
+    position: relative;
+    width: 150px;
+    line-height: 168px;
+    text-align: center;
+}
+
+#content #container1 #list2 #img2,#img3,#img4,#img5,#img6,#img7,#img8{
+    background: #f7f7f7;
+    margin-left: 30px;
+    width: 150px;
+    line-height: 168px;
+    text-align: center;
+}
+
+
+#content #container1 #list2 #img1 #a1 img{
+    vertical-align:middle;      /* căn giữa hình ảnh theo chiều cao xác định line-height */
+}
+#content #container1 #list2 #img1:hover{
+    background: #bbb9b9;
+}
+#content #container1 #list2 #img2 #a2 img{
+    vertical-align:middle;      
+}
+#content #container1 #list2 #img2:hover{
+    background: #bbb9b9;
+}
+#content #container1 #list2 #img3 #a3 img{
+    vertical-align:middle;      
+}
+#content #container1 #list2 #img3:hover{
+    background: #bbb9b9;
+}
+#content #container1 #list2 #img4 #a4 img{
+    vertical-align:middle;      
+}
+#content #container1 #list2 #img4:hover{
+    background: #bbb9b9;
+}
+#content #container1 #list2 #img5 #a5 img{
+    vertical-align:middle;      
+}
+#content #container1 #list2 #img5:hover{
+    background: #bbb9b9;
+}
+#content #container1 #list2 #img6 #a6 img{
+    vertical-align:middle;      
+}
+#content #container1 #list2 #img6:hover{
+    background: #bbb9b9;
+}
+#content #container1 #list2 #img7 #a7 img{
+    vertical-align:middle;      
+}
+#content #container1 #list2 #img7:hover{
+    background: #bbb9b9;
+}
+#content #container1 #list2 #img8 #a8 img{
+    vertical-align:middle;      
+}
+#content #container1 #list2 #img8:hover{
+    background: #bbb9b9;
+}
+
+
+#content #container1 #list2 .list_left{
+    float: left;
+}
+
+/*end container1*/
+
+/*begin container2*/
+/*list3*/
+#content #container2{
+    width: 1427px;
+    margin: 0 auto;
+    height: 455px;
+    margin-top: -50px;
+}
+#content #container2 #list3{
+    height: 182px;
+}
+#content #container2 #list3 #img9{
+    background: #f7f7f7;
+    width: 450px;
+    line-height: 168px;
+    text-align: center;
+}
+
+#content #container2 #list3 #img10,#img11{
+    background: #f7f7f7;
+    margin-left: 30px;
+    width: 450px;
+    line-height: 168px;
+    text-align: center;
+}
+
+#content #container2 #list3 #img9 #a9 img{
+    vertical-align:middle;      /* căn giữa hình ảnh theo chiều cao xác định line-height */
+}
+#content #container2 #list3 #img9:hover{
+    background: #bbb9b9;
+}
+#content #container2 #list3 #img10 #a10 img{
+    vertical-align:middle;      /* căn giữa hình ảnh theo chiều cao xác định line-height */
+}
+#content #container2 #list3 #img10:hover{
+    background: #bbb9b9;
+}
+#content #container2 #list3 #img11 #a11 img{
+    vertical-align:middle;      /* căn giữa hình ảnh theo chiều cao xác định line-height */
+}
+#content #container2 #list3 #img11:hover{
+    background: #bbb9b9;
+}
+
+#content #container2 #list3 .left{
+    float: left;
+}
+
+/*list4*/
+#content #container2 #list4{
+    margin-top: 30px;
+    height: 182px;
+}
+#content #container2 #list4 #img12{
+    background: #f7f7f7;
+
+    width: 450px;
+    line-height: 168px;
+    text-align: center;
+}
+
+#content #container2 #list4 #img13,#img14{
+    background: #f7f7f7;
+    margin-left: 30px;
+    width: 450px;
+    line-height: 168px;
+    text-align: center;
+}
+
+#content #container2 #list4 #img12 #a12 img{
+    vertical-align:middle;      /* căn giữa hình ảnh theo chiều cao xác định line-height */
+}
+#content #container2 #list4 #img12:hover{
+    background: #bbb9b9;
+}
+#content #container2 #list4 #img13 #a13 img{
+    vertical-align:middle;      /* căn giữa hình ảnh theo chiều cao xác định line-height */
+}
+#content #container2 #list4 #img13:hover{
+    background: #bbb9b9;
+}
+#content #container2 #list4 #img14 #a14 img{
+    vertical-align:middle;      /* căn giữa hình ảnh theo chiều cao xác định line-height */
+}
+#content #container2 #list4 #img14:hover{
+    background: #bbb9b9;
+}
+
+#content #container2 #list4 .left1{
+    float: left;
+}
+
+/*container3*/
+
+#content #container3{
+    width: 1427px;
+    margin: 0 auto;
+    height: 785px   ;
+}
+
+#content #container3 #menu_list{
+    height: 50px;
+}
+#content #container3 #menu_list ul{
+    margin-left:424px ;
+    margin-top: -10px;
+}
+#content #container3 #menu_list ul li{
+    float: left;
+    margin-left: 35px;
+}
+
+#content #container3 #menu_list ul li a{
+    text-decoration: none;	
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #878787;
+}
+
+#content #container3 #menu_list ul li a:hover{
+    color: #000000;
+}
+
+/*banner of container3*/
+
+
+#content #container3 #list_img #group_img{
+    width: 704px;
+    height: 670px;
+}
+#content #container3 #list_img #group_img #r2{
+    margin-left: 50px;
+}
+
+#content #container3 #list_img #group_img #r1 #banner2{
+    margin-top: 30px;
+}
+#content #container3 #list_img #group_img #r2 #banner4{
+    margin-top: 30px;
+}
+/*edit ảnh*/
+#content #container3 #list_img #group_img #r1 #banner1{
+    background: #f7f7f7;
+    line-height: 325px;
+    width: 320px;
+    text-align: center;
+}
+#content #container3 #list_img #group_img #r1 #banner1 img{
+    vertical-align: middle;
+}
+#content #container3 #list_img #group_img #r1 #banner2{
+    background: #f7f7f7;
+    line-height: 325px;
+    width: 320px;
+    text-align: center;
+}
+#content #container3 #list_img #group_img #r1 #banner2 img{
+    vertical-align: middle;
+}
+#content #container3 #list_img #group_img #r2 #banner3{
+    background: #f7f7f7;
+    line-height: 325px;
+    width: 320px;
+    text-align: center;
+}
+#content #container3 #list_img #group_img #r2 #banner3 img{
+    vertical-align: middle;
+}
+#content #container3 #list_img #group_img #r2 #banner4{
+    background: #f7f7f7;
+    line-height: 325px;
+    width: 320px;
+    text-align: center;
+}
+#content #container3 #list_img #group_img #r2 #banner4 img{
+    vertical-align: middle;
+}
+/*end ảnh*/
+
+#content #container3 #list_img #group_img .float{
+    float: left;
+}
+/*ảnh banner*/
+#content #container3 #list_img #banner_img{
+    width: 704px;
+    height: 670px;
+    margin-top: -13px;
+}
+#content #container3 #list_img .fl{
+    float:left;
+
+}
+#content #container3 #list_img #banner_img #BigBanner .bn2{
+    margin-top: -550px;
+    margin-left: 65px;
+}
+#content #container3 #list_img #banner_img #BigBanner .bn2 h4{
+    text-align: center;
+    margin-right: 50px;
+    font-size: 24px;
+}
+
+#content #container3 #list_img #group_img #r1 #banner1:hover{
+    background:#bbb9b9 ;
+}
+#content #container3 #list_img #group_img #r1 #banner2:hover{
+    background:#bbb9b9 ;
+}
+
+#content #container3 #list_img #group_img #r2 #banner3:hover{
+    background:#bbb9b9 ;
+}
+
+#content #container3 #list_img #group_img #r2 #banner4:hover{
+    background:#bbb9b9 ;
+}
+
+#content #container3 #list_img #banner_img #BigBanner .bn2 a{
+    text-decoration: none;
+    color:#bdbbbb ;
+    padding: 7px 30px;
+    margin-left: 20px;
+    border: 2px solid #bdbbbb;
+    border-radius: 25px;
+    text-transform: uppercase;
+    margin-left: 223px;
+}
+#content #container3 #list_img #banner_img #BigBanner .bn2 a:hover{
+    background:#afaeae; 
+    color:#797575 ;
+}
+/*end container3*/
+
+/* container4*/
+#content #container4 {
+    width: 1427px;
+    margin:0 auto;
+    height: 360px;
+    margin-top: 50px;
+}
+
+#content #container4 #banner_left{
+    float: left;
+}
+
+/*left*/
+#content #container4 #banner_left .txt{
+    margin-top:-250px;
+    text-align: center;
+}
+#content #container4 #banner_left .txt p#p1{
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+#content #container4 #banner_left .txt p#p2{
+    font-size: 18px;
+    color: #fff;
+}
+#content #container4 #banner_left .txt p#p3{
+    font-size: 22px;
+    color: #fff;
+    margin-top: 50px;
+}
+#content #container4 #banner_left .txt p#p3:hover{
+    color:#bbb9b9 ;
+    cursor: pointer;
+}
+#content #container4 #banner_left .txt img{
+    margin-bottom: 10px;
+}
+
+
+
+/*right*/
+#content #container4 #banner_right{
+    margin-left: 30px;
+    float: left;
+}
+#content #container4 #banner_right .txt2{
+    margin-top:-250px;
+    text-align: center;
+}
+#content #container4 #banner_right .txt2 p#p4{
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+#content #container4 #banner_right .txt2 p#p5{
+    font-size: 18px;
+    color: #fff;
+}
+#content #container4 #banner_right .txt2 p#p6{
+    font-size:18px;
+    color:#fff;
+    margin-top:-10px;
+}
+#content #container4 #banner_right .txt2 p#p7{
+    font-size: 22px;
+    color: #fff;
+}
+#content #container4 #banner_right .txt2 p#p7:hover{
+    color:#bbb9b9 ;
+    cursor: pointer;
+}
+#content #container4 #banner_right .txt2 img{
+    margin-bottom: 10px;
+}
+/*end content*/
+
+/*footer*/
+#footer{
+    height: 1427px;
+    max-height: 475px;
+    margin:0 auto;
+}
+
+#footer #ListAllMenu{
+    background-color: #f7f7f7;
+    width: 1920px;
+    height: 370px;
+    margin-top: 166px;
+}
+
+#footer #ListAllMenu .menu1 ul li a{
+    text-decoration: none;
+    color:#3f3f3f;
+}
+#footer #ListAllMenu .menu1 ul li a:hover{
+    color:#000000;
+    font-weight: bold;
+}
+#footer #ListAllMenu .menu1 #floatLeft{
+    float: left;
+    margin-left: 45px;
+    margin-top: 70px;
+}
+#footer #ListAllMenu .menu1 ul#floatLeft li{
+    margin-top: 15px;
+
+}
+/*bannerFooter*/
+#bannerFooter{
+    background-color: #525252;
+    line-height: 105px; /* thiết lập chiều cao giữa các dòng */
+    margin-top: -14px;
+}
+#bannerFooter p{
+    font-size: 14px;
+    color: #b0b0b0;
+    text-align: center;
+}
+/* tạo hiệu ứng icon*/
+.rocket:hover{
+    animation: blashoff ease 0.7s;
+    animation-iteration-count: infinite;
+    /* cho phép tạm dịch chuyển các phần tử dựa vào kiểu thay đổi hình dạng của transform*/
+    /* transform-origin: 50% 50%; */
+  }  
+  @keyframes blashoff{
+    0% {
+      transform:  translate(0px,0px)  ;
+    }
+    100% {
+      transform:  translate(250px,-200px)  ;
+    }
+  }
+
+  .clock:hover{
+    animation: shake linear 0.1s;
+    animation-iteration-count: infinite;
+  
+  }
+    
+  @keyframes shake{
+    0% {
+      transform:  translate(0px,0px)  ;
+    }
+    100% {
+      transform:  translate(20px,0px)  ;
+    }
+  }
+/*end web*/
+
+/*responsive*/
+/*Media Queries*/
+ @media (max-width: 992px){
+    #header #header_margin #menu1{
+        float: none;
+        margin-left: 130px;
+        
+    }
+    #header #header_margin #logo{
+        float: none;
+        text-align: center;
+        margin-top: -70px;
+        margin-left: 140px;
+    }
+    #header #header_margin #logo img{
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    #header #header_margin #menu2{
+        float: none;
+        margin-left:200px;
+    }
+    #header #header_margin #listicon{
+        display: none;
+    }
+    #banner #container #introduce #h1,#h2,#btn{
+        display:none;
+    }
+    #banner #container #introduce #ic #h3,#h4{
+        display:none;
+    }
+    #content #container1 #list1 #img1,#img2,#img3,#img4{
+        display: inline-block;
+        
+    }     
+    #content #container1 #list1 #img6,#img7,#img8{
+        display: none;
+        
+    }       
+    #content #container1 #list2 #img1,#img2,#img3,#img4{
+        display: inline-block;
+        
+    }    
+    #content #container1 #list2 #img6,#img7,#img8{
+        display: none;
+    }
+    #content #container1 #list1,#list2{
+        margin-left: 30px;
+    }
+
+    #banner #container #introduce #introduce_right .left img{
+        max-width: 100%;
+        height: auto;
+    }
+    #content #container2 h4{
+        text-align: center;
+        margin-right: 446px;
+    }
+    /*featured past*/
+    #content #container2 #list3,#list4{
+        margin-left: 30px;
+    }
+    #content #container2 #list3 #img9{
+        width: 400px;
+    }
+    #content #container2 #list3 #img10{
+        width: 400px;
+    }
+    #content #container2 #list3 #img10 #a10{
+        width: 400px;
+    }
+    #content #container2 #list3 #img11{
+        display: none;
+    }
+    #content #container2 #list4 #img12{
+        width: 400px;
+    }
+    #content #container2 #list4 #img13{
+        width: 400px;
+    }
+    #content #container2 #list4 #img13 #a13{
+        width: 400px;
+    }
+    #content #container2 #list4 #img14{
+        display: none;
+    }
+
+
+    #content #container3 h4{
+        margin-left: -500px;
+    }
+
+    #content #container3 #menu_list{
+        margin-left: -230px;
+    }
+    #content #container3 #list_img #group_img{
+        margin-left:100px;
+    }
+    #content #container3 #list_img #banner_img{
+        margin-left:90px;
+        float:none;
+    }
+    #content #container3 #list_img #banner_img #BigBanner .bn2 h4{
+        margin-left: 0px;
+    }
+    #content #container4{
+        margin-top: 700px;
+
+    }
+    #content #container4 #banner_left{
+        margin-left:105px;
+    }
+    #content #container4 #banner_right{
+        clear: both;
+        margin-top: 100px;
+        margin-left: 105px;
+    }
+
+    #footer{
+        margin-top:500px;
+    }
+    #footer #ListAllMenu .menu1 ul.x{
+        display:none;
+    }
+} 
+@media (max-width: 768px){  /*trên PC*/
+    #header #header_margin #menu1{
+        float: none;
+        text-align: center;
+        margin-left: 100px;
+    }
+    #header #header_margin #logo{
+        float: none;
+        text-align: center;
+        margin-top: -70px;
+        margin-left: 120px;
+    }
+    #header #header_margin #logo img{
+        max-width: 100%;
+        height: auto;
+    }
+    #header #header_margin #menu2{
+        float: none;
+        margin-left:175px;
+    }
+    #header #header_margin #listicon{
+        display:none;
+    }
+    #banner #container #introduce #h1,#h2,#btn{
+        display:none;
+    }
+    #banner #container #introduce #ic #h3,#h4{
+        display:none;
+    }
+    #content #container1 #list1 .list_left{
+        float: none;
+
+    }
+    #content #container1 #list2 .list_left{
+        float: none;
+        margin-left: 300px;
+
+    } 
+    #content #container1 #list1 {
+
+        clear: both;
+        
+    }    
+    #content #container1 #list1 #img5,#img6,#img7,#img8{
+        clear: both;
+        display: none;
+        
+    }     
+    #content #container1 #list2 #img5,#img6,#img7,#img8{
+        clear: both;
+        display: none;
+        
+    }  
+    #content #container1 #list2 #img1{
+        margin-left:0px;
+    }   
+    #content #container1 #list2 #img3{
+        margin-left:30px;
+    }   
+    #content #container1 #list2 #img4{
+        margin-left:30px;
+    }   
+    #banner #container #introduce #introduce_right{
+        max-width: 100%;
+        height: auto;
+    }
+    #content #container2 h4{
+        text-align: center;
+        margin-left: -300px;
+    }
+    /*featured past*/
+
+    #content #container2 #list3 #img9{
+        width: 330px;
+    }
+    #content #container2 #list3 #img10{
+        width: 330px;
+    }
+    #content #container2 #list3 #img10 #a10{
+        width: 330px;
+    }
+    #content #container2 #list3 #img11{
+        display: none;
+    }
+    #content #container2 #list4 #img12{
+        width: 330px;
+    }
+    #content #container2 #list4 #img13{
+        width: 330px;
+    }
+    #content #container2 #list4 #img13 #a13{
+        width: 330px;
+    }
+    #content #container2 #list4 #img14{
+        display: none;
+    }
+    #content #container2 h4{
+        margin-left:-200px;
+    }
+    #content #container3 h4{
+        margin-right: 200px;
+    }
+    #content #container3 #menu_list ul{
+        clear: both;
+        margin-left: 300px;
+    }
+    #content #container3 #list_img #group_img{
+        margin-left: 30px;
+    } 
+    #content #container3 #list_img #banner_img{
+        margin-left:15px;
+    }
+    #content #container4{
+        margin-left:-72px;
+    }
+    #footer #ListAllMenu .menu1 ul.y{
+        display:none;
+    }
+}
+@media (max-width: 576px){ /*trên tablet*/
+    #header #header_margin #menu1{
+        float: none;
+        margin-left: 1px;
+    }
+    #header #header_margin #menu1 ul li{
+        margin-left: 10px;
+    }
+    #header #header_margin #logo{
+        float: none;
+        text-align: center;
+        margin-top: -70px;
+        margin-left: -20px;
+    }
+    #header #header_margin #logo img{
+        max-width: 100%;
+        height: auto;
+    }
+    #header #header_margin #menu2{
+        float: none;
+        margin-left:55px;
+    }
+    #header #header_margin #listicon{
+        display:none;
+    }
+    #banner #container #introduce #h1,#h2,#btn{
+        display:none;
+    }
+    #banner #container #introduce #ic #h3,#h4{
+        display:none;
+    }
+    #content #container1 #list1 .list_left{
+        float: none;
+    }
+    #content #container1 #list2 .list_left{
+        float: none;
+        margin-left: 300px;
+    }
+    #banner #container #introduce #introduce_right{
+        max-width: 100%;
+        height: auto;
+    }
+    #content #container1 #list1 #img2,#img3{
+        margin-left:10px;
+    } 
+    #content #container1 #list2 #img2{
+        margin-left:10px;
+    } 
+    #content #container1 #list2 #img3{
+        margin-left:10px;
+    } 
+    #content #container1 #list2 #img4{
+        display: none;;
+    } 
+    #content #container1 #list1 #img4{
+        display: none;;
+    } 
+
+    #content #container1 #list1,#list2{
+        margin-left: 3px;
+    }
+    #content #container2 h4{
+        margin-left:-500px;
+    }
+    #content #container2 #list3 #img10{
+        display:none;
+    }
+    #content #container2 #list3 #img9{
+        margin-left: 50px;
+    }
+    #content #container2 #list4 #img13{
+        display:none;
+    }
+    #content #container2 #list4 #img12{
+        margin-left: 50px;
+    }
+    #content #container3 h4{
+        margin-left: -730px;
+    }
+    #content #container3 #menu_list{
+        margin-left:-330px;
+    }
+    #content #container3 #list_img #group_img #r2{
+        display: none;
+    }
+    #content #container3 #list_img #group_img #r1{
+        margin-left:50px;
+    }
+
+    #content #container3 #list_img #banner_img{
+        margin-left: -125px;
+    }
+    #content #container4{
+        margin-left: -200px;
+    }
+
+}

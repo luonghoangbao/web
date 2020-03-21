@@ -1,0 +1,128 @@
+body{
+    font-family: Arial, "Times new roman", sans-serif;
+    font-size: 16px;
+    background-color:#B3BBCA;
+}
+
+ul, ol{
+    list-style: none;
+    
+}
+
+header img{
+    width: 200px;
+
+}
+header{
+    background-color: white;
+}
+
+#slogan{
+    position: absolute;
+    height: 80px;
+    top:45px;
+    left:500px;
+}
+
+#wrap{
+    background-color: #ffffff;
+    width: 960px;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+
+#innerwrap{
+    background-image: url(./download.jfif);
+    /* background-repeat: repeat-x; */
+}
+
+#innerwrap::after{
+    content: "";
+    display: block;
+    clear:both;
+    height:0;
+}
+nav{
+    background-color: #686868;
+    height: 35px;
+}
+
+nav li{
+    float:left;
+    width: 100px;
+    height: 35px;
+    background-color: #7db3a4;
+    text-align: center;
+    border-left: 1px solid #000;
+    border-left: 1px solid #000;
+    line-height: 35px;
+}
+
+nav a{
+    text-decoration: none;
+    color:#000;
+}
+
+nav a:hover{
+    color:red;
+}
+
+aside{
+    float:left;
+    width: 300px;
+
+}
+
+article{
+    float:right;
+    width:600px;
+}
+
+/*footer{
+    background-image: url(./download.jfif);
+    background-repeat: no-repeat;
+    width: 960px;
+    height: 118px;
+} */
+
+footer p{
+    margin:10px 0 0 20px;
+    width:280px;
+    font-size: 1em;
+}
+aside p, aside h2, aside h3, article p, article h1{
+    margin-left:20px;
+    margin-right: 20px;
+}
+
+p,li{
+    font-size: 0.875em;
+    line-height: 1.75em;
+}
+
+h1{
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: normal;
+}
+
+h2{
+    font-size: 1.25em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+}
+
+h3{
+    font-size:0.875em;
+    letter-spacing: 0.1em;
+}
+
+#bioclass{
+    margin-left:20px;
+}
+
+table{
+    margin:auto;
+    border-color:#efefef;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" type="text/css" href="./example.css"/>
+        <title>HTML 5</title>
+    </head>
+    <body>
+        <canvas id="myCanvas" width="578" height="200"></canvas>
+        <script>
+            //Lấy thẻ HTML Canvas
+            var canvas = document.getElementById('myCanvas');
+            //vẽ ở mô hình 2D
+            var context = canvas.getContext('2d');
+            //Đặt nét vẽ
+            context.beginPath();
+            //Tạo đường cong với hàm arc
+            context.arc(95, 50, 40, 0, 2 * Math.PI);
+            //Vẽ lên trang web
+            context.stroke();
+
+            //Thiết lập font chữ và màu
+            context.font = '40pt Arial';
+            context.fillStyle = 'red';  
+            //Vẽ 1 đoạn text tại vị trí 150px 100px
+            context.fillText('Hello World!', 150, 100);
+        </script>
+        <p id="doanvan1">BẢO ĐẸP TRAI NHẤT THẾ GIỚI</p>
+        <h1>Trâu</h1>
+        <p id="doanvan2">BẢO ĐẸP TRAI NHẤT THẾ GIỚIBẢO ĐẸP TRAI NHẤT THẾ GIỚIBẢO ĐẸP TRAI NHẤT THẾ GIỚI
+            BẢO ĐẸP TRAI NHẤT THẾ GIỚIBẢO ĐẸP TRAI NHẤT THẾ GIỚIBẢO ĐẸP TRAI NHẤT THẾ GIỚI
+            BẢO ĐẸP TRAI NHẤT THẾ GIỚIBẢO ĐẸP TRAI NHẤT THẾ GIỚIBẢO ĐẸP TRAI NHẤT THẾ GIỚI
+        </p>
+        <div id="left">left</div>
+        <div id="right">right</div>
+        <div id="bottom">bottom</div>
+        
+        <div class="relative">
+            <div class="absolute red"></div>
+        </div>
+    </body>
+</html>
