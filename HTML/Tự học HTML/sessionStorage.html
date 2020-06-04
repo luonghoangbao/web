@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <script type="text/javascript">
+    //localStorage và sessionStorage
+        if(sessionStorage.hits){
+            //Tăng số hits sau mỗi lần truy cập
+            sessionStorage.hits = Number(sessionStorage.hits) = 1;
+        }else{
+            //nếu chưa truy cập lần nào thì gán giá trị 1
+            sessionStorage.hits=1;
+        }
+        //Hiển thị số hits lên trình duyệt  
+        document.write("Số hit :" + sessionStorage.hits);
+    </script>
+    <body>
+        <p>Refresh trang web để tăng số hits</p>
+        <p>Đóng cửa sổ, sau đó mở lại để kiểm tra kết quả</p>
+    </body>
+</html>

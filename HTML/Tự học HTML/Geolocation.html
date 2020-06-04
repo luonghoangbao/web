@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+        <div id="demo"></div>
+        <button onclick="getLocation()">Get Location</button>
+    </body>
+    <script>
+        //Lấy đối tượng thẻ div.demo
+        var x= document.getElementById("demo");
+
+        //Lấy tọa độ hiện tại
+        function getLocation(){
+            navigator.geolocation.getCurrentPosition(showPosition);
+        }
+        //Hiển thị vào thẻ div.demo
+        function showPosition(position){
+            // x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+            var latlon = position.coords.latitude + " , " + position.coords.longitude;
+
+            var map_url = "https://maps.googleapis.com/maps/api/staticmap?center = " +latlon
+            + "&zoom=14&size=400x300&sensor=true&&markers=color:red%7Clabel:Q%7C" + position.coords.latitude + " , "
+            +position.coords.longitude;
+
+            x.innerHTML = "<img src ='" + map_url + "'\>";
+        }
+    </script>
+</html>

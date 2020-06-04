@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width, initial scale = 1">
+        <title>Menu Đa Cấp</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="headerDaCap.css">
+    </head>
+    <body>
+        <div class="w3-content">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a>
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Information</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Tutorial</a>
+                    <ul>
+                        <li><a href="#">Kiến thức</a>
+                            <ul>
+                                <li><a href="#">Word</a></li>
+                                <li><a href="#">Excel</a></li>
+                                <li><a href="#">Powerpoint</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Đồ họa</a>
+                            <ul>
+                                <li><a href="#">Photoshop</a></li>
+                                <li><a href="#">Illustrastion</a></li>
+                                <li><a href="#">Corel Draw</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Lập trình</a>
+                            <ul>
+                                <li><a href="#">Thiết kế web</a></li>
+                                <li><a href="#">Lập trình PHP</a></li>
+                                <li><a href="#">Lập trình C#</a></li>   
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a>
+                    <ul>
+                        <li><a href="#">youtube</a></li>
+                        <li><a href="#">facebook</a></li>
+                        <li><a href="#">instagram</a></li>
+                        <li><a href="#">Tinder</a></li>
+                        <li><a href="#">Zalo</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".menu li").hover(function(){
+                    $(this).find("ul:first").slideDown(500); 
+                }, function(){
+                    $(this).find("ul:first").hide(300); //hide : ẩn đi
+                })
+            })
+        </script>
+    </body>
+</html>

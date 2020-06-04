@@ -1,0 +1,382 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    max-width: 100%;
+    height: 4000px;
+}
+.clear{
+    clear: both;
+}
+.header{
+    width: 70%;
+    margin-left: 220px;
+    height: 145px;
+}
+
+.header .logo{
+    max-width: 100%;
+    height: auto;
+    float: left;
+    margin-left: 60px;
+}
+
+.header .menu{
+    float: left;
+    line-height: 145px ;
+    margin-left: 30px;
+}
+
+.header .menu ul li{
+    list-style: none;
+    float: left;
+    margin-left: 70px;
+}
+.header .menu ul li a{
+    color: #706c6c;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header .menu ul li a:hover{
+    color: #070707;
+}
+/*end header*/
+.banner{
+    max-width: 100%;
+    height: 432px;
+}
+.banner .banner_img img{
+    width: 100%;
+    height: 432px;
+    margin-top: -40px;
+}
+
+.banner .banner_img .banner_txt{
+    margin-left: 290px;
+    margin-top: -380px;
+}
+
+.banner .banner_img .banner_txt p#p1{
+    color: #706c6c;
+    font-size: 44px;
+    line-height: 100px;
+}
+.banner .banner_img .banner_txt p{
+    color: #070707;
+    font-size: 44px;
+    line-height: 50px;
+}
+.banner .banner_img .banner_txt button{
+    background-image: url(./images/iconArrrow.png);
+    background-repeat: no-repeat;
+    background-position: 30px 12px;
+    height: 43px;
+    width: 182px;
+    background-color: #070707;
+    border: none;
+    margin-top:10px;
+}
+.banner .banner_img .banner_txt button a{
+    margin-left: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.banner .banner_img .banner_txt button:hover{
+    background:#706c6c ;
+    background-image: url(./images/iconArrrow.png);
+    background-repeat: no-repeat;
+    background-position: 30px 12px;
+    transition: ease 1s;
+    text-shadow: 2px 2px 4px #000000; 
+}
+/*end banner*/
+.content{
+    height: 300px;
+    max-width: 100%;
+    width: 70%;
+    margin-left: 290px;
+}
+
+.content .content_left{
+    max-width: 35%;
+    margin-top: -122px;
+    float:left;
+}
+
+.content .content_left .bg_hair{
+    position: relative;
+    border: 1px solid #ffffff;
+    height: 160px;
+    width: 250px;
+    background-color: #fcf8f8;
+    text-align: center;
+}
+
+.content .content_left .bg_hair p#p2{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 46px;
+}
+.content .content_left .bg_hair p#p3{
+    font-size: 46px;
+    color: #706c6c;
+}
+.content .content_left .bg_txt{
+    margin-top: 10px;
+}
+.content .content_left .bg_txt p#p4{
+    font-weight: bold;
+}
+/*end ct left*/
+
+.content .content_right{
+    float: left;
+    position: relative;
+    height: 300px;
+    width: 60%;
+    margin-left:5%;
+}
+
+.content .content_right .img_left{
+    height: 290px;
+    width: 230px;
+    float: left;
+}
+.content .content_right .img_right{
+    margin-left: 32px;
+    height: 30px;
+    width: 300px;
+    float: left;
+
+}
+.content .content_right .img_right img.im1{
+    margin-top:5px;
+}
+
+/*end content1*/
+.service{
+    height: 380px;
+}
+.service img{
+    width: 100%;
+    height: 363px;
+}
+.service .booking{
+    width: 404px;
+    height: 265px;
+    background-color: #ffffff;
+    padding: 10px;
+    margin:0 auto;
+    margin-top: -330px;
+    position: relative;
+    text-align: center;
+}
+.service .booking label{
+    border-top: 1px solid #000000;
+    padding-top: 6px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.service .booking .ct{
+    text-align: center;
+    border: 1px solid #d5d2d2;
+    height: 265px;
+    width: 404px;
+}
+.service .booking .ct button{
+    text-align: center;
+    height: 25px;
+    width: 98px;
+    background-color: #070707;
+    border: none;
+    margin-top: 2px;
+}
+.service .booking .ct button a{
+    text-align: center;
+    text-transform:uppercase;
+    font-size: 11px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.service .booking .ct button:hover{
+    background:#706c6c ;
+    transition: ease 1s;
+    text-shadow: 2px 2px 4px #000000; 
+}
+.service .booking .ct1{
+    margin-top: 5px;
+}
+.service .booking p#p1{
+    float: left;
+    margin-left: 60px;
+}
+.service .booking p#p2{
+    float: left;
+    margin-left: 170px;
+}
+/*end service*/
+.test{
+    height: 280px;
+    max-width: 100%;
+}
+.test img.img1{
+    margin:0;
+    padding: 0;
+    max-width: 100%;
+    margin:0 auto;
+    margin-left: 705px;
+}
+.test h1{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.test .test1 img,.test .test2 img,.test .test3 img{
+    margin-left: 115px;
+}
+.test .test1 p,.test .test2 p,.test .test3 p{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.test .test1 label,.test .test2 label,.test .test3 label{
+    margin-left: 50px;
+    font-size: 16px;
+}
+.test .test1{
+    margin-top: 10px;
+    margin-left: 280px;
+    float: left;
+}
+.test .test2{
+    margin-top: 10px;
+    margin-left: 80px;
+    float: left;
+}
+
+.test .test3{
+    margin-top: 10px;
+    margin-left: 80px;
+    float: left;
+}
+/*end test*/
+.contact img{
+    width: 100%;
+    height: 432px;
+}
+
+.contact .touch{
+    width: 404px;
+    height: 300px;
+    background-color: #020310;
+    padding: 10px;
+    margin:0 auto;
+    margin-top: -380px;
+    position: relative;
+    text-align: center;
+}
+.contact .touch label{
+    border-top: 1px solid #ffffff;
+    padding-top: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+}
+.contact .touch .nen{
+    text-align: center;
+    border: 1px solid #ffffff;
+    height: 300px;
+    width: 404px;
+}
+
+.contact .touch .nen p{
+    color: #ffffff;
+    font-size: 9px;
+}
+.contact .touch .nen form{
+    margin-top: 20px;
+}
+.contact .touch .nen form input#f1{
+    width: 140px;
+    height: 28px;
+    border: 1px solid #ffffff;
+    background-color: #020310;
+    color: #ffffff;
+}
+.contact .touch .nen form input#f2{
+    margin-left: 30px;
+    width: 140px;
+    height: 28px;
+    border: 1px solid #ffffff;
+    background-color: #020310;
+    color: #ffffff;
+}
+.contact .touch .nen form input#f3{
+    margin-top: 20px;
+    width: 140px;
+    height: 28px;
+    border: 1px solid #ffffff;
+    background-color: #020310;
+    color: #ffffff;
+}
+.contact .touch .nen form input#f4{
+    margin-left: 30px;
+    width: 140px;
+    height: 28px;
+    border: 1px solid #ffffff;
+    background-color: #020310;
+    color: #ffffff;
+}
+
+.contact .touch .nen button{
+    height: 25px;
+    width: 98px;
+    background-color: #ffffff;
+    border: none;
+    margin-top: 10px;
+}
+.contact .touch .nen button a{
+    text-align: center;
+    text-transform:uppercase;
+    font-size: 11px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact .touch .nen button:hover{
+    background:#706c6c ;
+    transition: ease 1s;
+    text-shadow: 2px 2px 4px #ffffff; 
+}
+/*end touch*/
+.footer{
+    background-color: #020310;
+    width: 100%;
+    height: 156px;
+}
+.footer p{
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 206px;
+}

@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu ul{
+    position: absolute;     /* để cho nó nổi lên trên các menu còn lại */
+    top:42px;
+    left: 0;
+    display: none;          /*	Thành phần không hiển thị.*/
+}
+
+.menu li{
+    float:left;
+    width: 150px;
+    line-height: 1.5em;
+    position: relative;     /* để cố định các li nằm ở trên */
+    text-align: center;
+    background: teal;
+    padding: 10px;
+}
+.menu li:hover{
+    background: green;
+    cursor: pointer; /*có hình bàn tay*/
+}
+
+.menu ul ul{
+    left:150px;
+    top: 0px;
+}

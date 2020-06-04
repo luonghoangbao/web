@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+        <title>Học HTML5 từ đầu</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> /*Đoạn code này khuyến khích sử dụng trong tất cả các chương trình*/        
+        <link rel="stylesheet" href="./resest.css" media="screen">
+        <link rel="stylesheet" href="./style.css" media="screen">
+        <link href="https://fonts.googleapis.com/css?family=Baumans|Open+Sans&display=swap" rel="stylesheet">
+        <script src="./vendor.js"></script>
+    </head>
+    <body>
+        <header>
+            <!-- Begin title -->
+            <h1>Learning HTML5</h1>
+            <p>A responsive website tutorial</p>
+        </header>
+        <!-- End title -->
+        <nav>
+            <!--Begin Horizontal Navigation Bar-->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Porfolio</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <!--Begin Horizontal Navigation Bar-->
+        <section class="container">
+            <article id="slider_content">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor mit amet, consecteur elit.Nulla, deserunt, neccsitbut?Adipisci repreheisc losut asdnhit iujewj
+                    ea corruipt illo<a href="#" class="responsive_button">More....</a></p>
+                <a class ="button" href="#">More...</a>
+            </article>
+        </section>
+
+        <div id="slider">
+            <!--Begin slider-->
+            <figure>
+                <img src="../image/download (1).jfif">
+                <img src="../image/download (2).jfif">
+                <img src="../image/download (3).jfif">
+                <img src="../image/download.jfif">
+                <img src="../image/images.jfif">
+            </figure>
+        </div>
+        <!--End slider-->
+        <section id="spacer">
+            <!--Begin :Search bar-->
+            <p>Lorem ipsum dolor mit amet, consecteur elit</p>
+            <div class="search">
+                <form action="#">
+                    <input type="text" name="sitesearch" value="Enter a word...">
+                    <input type="submit" class="button" value ="Search">
+                </form>
+            </div>
+        </section>
+        <!--End :Search bar-->
+        <section id="three_columns">
+            <article>
+                <div class="zoomin">
+                    <img src="../image/photo12.png" alt="Some alt text"/>
+                </div>
+                <h3>Lorem ipsum</h3>
+                <p>
+                    Lorem ipsum dolor mit amet, consecteur elit.Nulla, deserunt, neccsitbut?Adipisci repreheisc 
+                </p>
+            </article>
+            <article>
+                <div class="zoomin">
+                    <img src="../image/download (2).jfif" alt="Some alt text"/>
+                </div>
+                <h3>Consecteteur</h3>
+                <p>
+                    Lorem ipsum dolor mit amet, consecteur elit.Nulla, deserunt, neccsitbut?Adipisci repreheisc
+                </p>
+            </article>   
+            <article>
+                <div class="zoomin">
+                    <img src="../image/download (3).jfif" alt="Some alt text"/>
+                </div>
+                <h3>Dolor sit amet</h3>
+                <p>
+                    Lorem ipsum dolor mit amet, consecteur elit.Nulla, deserunt, neccsitbut?Adipisci repreheisc
+                </p>
+            </article> 
+            <div class="clear"></div>
+        </section>
+        <!--End columns 3-->
+        <section id="four_columns">
+            <h2>
+                Lorem ipsum
+            </h2>
+            <article class="img-item">
+                <figure>
+                    <a href="#img1" title="Some title">
+                        <div class="zoomin">
+                            <img src="../image/photo12.png" alt="Some alt text">
+                        </div>
+                    </a>
+                    <figcaption>    <!-- thẻ chú thích minh họa -->
+                        <strong>
+                            Photo by: Lorem
+                        </strong>
+                        Lorem ipsum dolor sit amet, Consecteteur adipiscing elit.
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="img-item">
+                <figure>
+                    <a href="#img2" title="Some title">
+                        <div class="zoomin">
+                            <img src="../image/download (2).jfif" alt="Some alt text">
+                        </div>
+                    </a>
+                    <figcaption>
+                        <strong>
+                            Photo by: Bao
+                        </strong>
+                        Lorem ipsum dolor sit amet, Consecteteur adipiscing elit.
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="img-item">
+                <figure>
+                    <a href="#img3" title="Some title">
+                        <div class="zoomin">
+                            <img src="../image/download (3).jfif" alt="Some alt text">
+                        </div>
+                    </a>
+                    <figcaption>
+                        <strong>
+                            Photo by: Vu
+                        </strong>
+                        Lorem ipsum dolor sit amet, Consecteteur adipiscing elit.
+                    </figcaption>
+                </figure>
+            </article>   
+            <article class="img-item">
+                <figure>
+                    <a href="#img4" title="Some title">
+                        <div class="zoomin">
+                            <img src="../image/photo12.png" alt="Some alt text">
+                        </div>
+                    </a>
+                    <figcaption>
+                        <strong>
+                            Photo by: Vuong
+                        </strong>
+                        Lorem ipsum dolor sit amet, Consecteteur adipiscing elit.
+                    </figcaption>
+                </figure>
+            </article>   
+            <div class="clear"></div>          
+        </section>
+
+        <section id="lightbox">
+            <a href="#_" class="lightbox" id="img1">
+                <img src="../image/photo12.png">
+            </a>
+            <a href="#_" class="lightbox" id="img2">
+                <img src="../image/download (2).jfif">
+            </a>
+            <a href="#_" class="lightbox" id="img3">
+                <img src="../image/download (3).jfif">
+            </a>
+             <a href="#_" class="lightbox" id="img4">
+                <img src="../image/photo12.png">
+            </a>
+        </section>
+
+        <!--Có thể truy cập vào web này để lấy cú pháp phím tắt đoạn code : https://docs.emmet.io/abbreviations/syntax/ -->
+        <section id="multiple_columns">
+            <section class="column1">
+                <article>
+                    <h3>Dolor sit amet</h3>
+                    <p>Lorem ipsum dolor sit amet, Consecteteur adipiscing elit.Lorem ipsum dolor sit amet, Consecteteur adipiscing elit.
+                        Lorem ipsum dolor sit amet, Consecteteur adipiscing elit.Lorem ipsum dolor sit amet, Consecteteur adipiscing </p>
+                    <p>Lorem ipsum dolor sit amet, Consecteteur adipiscing elit.Lorem ipsum dolor sit amet, Consecteteur adipiscing
+                        Lorem ipsum dolor sit amet, Consecteteur adipiscing elit.Lorem ipsum dolor sit amet, Consecteteur adipiscing elit.
+                    </p>
+                </article>
+            </section>
+
+            <!--Tạo hiệu ứng rung http://cssanimate.com/ -->
+            <section class="column2">
+                <article class="row">
+                    <img src="../image/download.png" class="rocket" alt="Some alt text">
+                    <p>Lorem ipsum dolor sit amet, Consecteteur adipiscing elit.</p>
+                </article>
+                <article class="row">
+                    <img src="../image/images.png" class="clock" alt="Some alt text">
+                    <p>Lorem ipsum dolor sit amet, Consecteteur adipiscing elit.</p>
+                </article>
+            </section>
+        </section>
+        
+        <footer>
+            <section id="extra_content">
+                <article class="column">
+                    <h4>Lorem ipsum</h4>
+                    Lorem ipsum dolor sit amet, Consecteteur adipiscing elit.Lorem ipsum dolor sit amet,
+                    Lorem ipsum dolor sit amet, Consecteteur adipiscing elit.Lorem ipsum dolor sit amet,
+                    Lorem ipsum dolor sit amet, Consecteteur adipiscing elit.Lorem ipsum dolor sit amet,
+                    Lorem ipsum dolor sit amet.
+                </article>
+
+                <article class="column midlist">
+                    <h4>Consecteteur</h4>
+                    <ul>
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit amet</a>
+                        </li>
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit amet</a>
+                        </li>
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit amet</a>
+                        </li>
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit amet</a>
+                        </li>
+                    </ul>
+                </article>
+                <article class="column rightlist">
+                    <h4>Dolor sit amet</h4>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img alt="Some alt text" src="../image/images.png">
+                                <span>Consecteteur adipiscing elit.Lorem ipsum dolor sit amet</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="Some alt text" src="../image/images.png">
+                                <span>Consecteteur adipiscing elit.Lorem ipsum dolor sit amet</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="Some alt text" src="../image/images.png">
+                                <span>Consecteteur adipiscing elit.Lorem ipsum dolor sit amet</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </article>
+            </section>
+            <section id="page_owner_info">
+                <div class="wrapper">
+                    <div class="copyright">Copyright 2016 by
+                        <a href="#">Example</a>.All Rights Reserved
+                    </div>
+
+                    <div class="social">
+                        <a href="#">
+                            <img src="../image/images.png" alt="Some alt text" width="25">
+                        </a>
+                        <a href="#">
+                            <img src="../image/images.png" alt="Some alt text" width="25">
+                        </a>
+                        <a href="#">
+                            <img src="../image/images.png" alt="Some alt text" width="25">
+                        </a>
+                        <a href="#">
+                            <img src="../image/images.png" alt="Some alt text" width="25">
+                        </a>
+                        <a href="#">
+                            <img src="../image/images.png" alt="Some alt text" width="25">
+                        </a>
+                    </div>
+                </div>
+            </section>
+             <!-- tham khảo https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints/ -->
+        </footer>
+    </body>
+</html>

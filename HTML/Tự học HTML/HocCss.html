@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <style>
+            #rcorners1{
+                border-radius: 25px;
+                background: #73ad73;
+                padding:20px;
+                width:200px;
+                height:150px;
+            }
+            #boderimages{
+                border-style: solid;
+                border-width: 27px;
+                -moz-border-image: url(photo1.jpg) 27 repeat;
+                -webkit-border-image: url(photo1.jpg) 27 repeat;
+                -o-border-image: url(photo1.jpg) 27 repeat;
+                border-image: url(photo1.jpg) 27 fill repeat;
+                /* https://border-image.com/ */
+            }
+            #example1{
+                background-image: url(./images.jfif), url(./images.jfif);
+                background-position: right bottom, left top;
+                background-repeat: no-repeat ,repeat;
+                padding:15px;
+            }
+            #grad1{
+                height:200px;
+                background:linear-gradient(red,yellow);
+                /* lấy link ở web :https://www.colorzilla.com/gradient-editor/ */
+            }
+            h1{
+                color:white;
+                text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+                /* https://css3gen.com/wp-content/cache/all/text-shadow/index.html */
+            }
+            #boxshadow{
+                width: 300px;
+                height: 100px;
+                padding:15px;
+                background-color: yellow;
+                box-shadow:  10px 10px 5px grey; 
+                /* chiều ngang - chiều dọc - độ rộng của bóng - màu sắc */
+                /* https://css3gen.com/wp-content/cache/all/text-shadow/index.html */
+            }
+            @font-face {
+                font-family:myFirstFont ;
+                src: url(Sansation_Light.ttf);
+            }
+            div{
+                font-family: myFirstFont;
+            }
+            .yellow{
+                height: 100px;
+                width: 100px;
+                background-color: yellow;
+            }
+            .red{
+                height: 100px;
+                width: 100px;
+                background-color: red;
+                /* transform: translate(200px,50px);  dịch chuyển sang phải 200px,xún dưới 50px
+                transform: rotate(20deg);  xoay 1 góc 20deg
+                transform: scale(2,3);  kéo dãn chiều rộng ra 2 lần,chiều dài ra 3 lần
+                transform:skewX(20deg); kéo ngang 1 góc nghiêng 20độ so với trục Ox
+                transform:skewY(20deg); kéo ngang 1 góc nghiêng 20độ so với trục Oy */
+                transform: matrix(1, 0, 0.5, 1, 150, 0);
+            }
+            #transitor{
+                width: 100px;
+                height: 100px;
+                background: red;
+                transition: width 2s, height 4s;
+            }
+
+            #transitor:hover{
+                width:300px;
+                height: 300px;
+            }
+
+            #animation{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                animation-name: example;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+            }
+            /*Standard syntax */
+            @keyframes example {
+                0% {background-color:red;}
+                25% {background-color: yellow;}
+                50% {background-color:blue;}
+                100% {background-color :green;}
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hiệu ứng đổ bóng!!!</h1>
+        <div id="rcorners1"></div>
+        <div id="boderimages">
+            <br>
+        </div>
+        <h3>Liner gradient - Top to Bottom</h3>
+        <div id="grad1"></div>
+        <br>
+        <div id="example1">
+            <h1>CSS3 - Multiple backgrounds</h1>
+            <p>Tensile PropertiesTensile PropertiesTensile PropertiesTensile PropertiesTensile PropertiesTensile Properties</p>
+            <p>Tensile PropertiesTensile PropertiesTensile PropertiesTensile PropertiesTensile PropertiesTensile Properties</p>
+        </div>
+        <br>
+        <div id="boxshadow">
+            This is a div element with a box-shadow
+        </div>
+        <div>with css3, websites can finally user fonts other than the pre-selected "web-safe" fonts</div>
+
+        <div class="yellow"></div>
+        <div class="red"></div>
+
+        <div id="transitor"></div>
+        <br>
+        <div id="animation"></div>
+    </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+
+        <h1><a id="p1">HTML là gì?</a></h1>
+        <h1><a id="p2">Lịch sử ra đời</a></h1>
+        <h1><a id="p3">Làm quen với cú pháp HTML</a></h1>
+        <h1><a id = "index"  >Content</a></h1>
+        <ol type="1">
+            <li><a href="#p1">HTML là gì?</a></li>
+            <li><a href="#p2">Lịch sử ra đời</a></li>
+            <li><a href="#p3">Làm quen với cú pháp HTML</a></li>
+            <a href="#index">Về mục lục</a>
+        </ol>
+        <table border="1" width="50%">
+            <caption>Thời khóa biểu</caption>
+            <tr>
+                <td rowspan="2">Alloy</td>
+                <td colspan="2">Brinell Hardness(5/70)</td>
+                <td colspan="3">Tensile Properties</td>
+                <td rowspan="2">Perlite percent(%)</td>
+                <td rowspan="2">Perlite acedemy</td>
+                <td rowspan="2">Nodularity</td>
+                <td rowspan="2">Ti content(% in weight)</td>
+            </tr>
+            <tr>
+                <td>Surface</td>
+                <td>Nucleous</td>
+                <td>UTS</td>
+                <td>YS</td>
+                <td>Elongtaghia</td>
+            </tr>
+            <tr>
+                <td>L1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>L1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>L1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+        </table>
+
+        <table style="width:600px" border="1">
+            <caption>Order #123</caption>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Item Price</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th colspan="3">Total price</th>
+                    <th>$240.92</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <th>Domain name</th>
+                    <th>3</th>
+                    <th>$7.99</th>
+                    <th>$23.97</th>
+                </tr>
+                <tr>
+                    <th>SSL</th>
+                    <th>4</th>
+                    <th>$9.99</th>
+                    <th>$58.97</th>
+                </tr> 
+                <tr>
+                    <th>Web hosting</th>
+                    <th>5</th>
+                    <th>$13.52</th>
+                    <th>$123.97</th>
+                </tr>               
+            </tbody>
+        </table>
+        <form name="f1" action="" method="get">
+            <input type="text" name="txtUsr" value=""/><br/>
+            <input type="password" name="txtPwd" value=""/><br/>
+            <input type="radio" name="Sex" value="Nam" checked/>Nam
+            <input type="radio" name="Sex" value="Nữ"/>Nữ<br/>
+            <input type="submit" name="btnSubmit" value="Đồng ý"/><br/>
+            <input type="checkbox" name="Food" value="Steak" checked/>Steak
+            <input type="checkbox" name="Food" value="Pig" />Pig
+            <input type="checkbox" name="Food" value="Soup" />Soup<br/>
+            <textarea name ="txta1" rows="5" cols="20">welcome to HTML 5 and CSS4</textarea>
+        </form>
+        <!-- multiple -->
+        <select> 
+            <option value="Orange" >Cam</option>
+            <option value="nho">Nho</option>
+            <option value="xoai">Xoài</option>
+            <option value="duahau">Dưa Hấu</option>
+            <option value="oqua">Khổ qua</option>
+        </select>
+
+        <form name="f1" action="" method="get">
+            <fieldset>
+                <legend>Account</legend>
+                <label for="text">Username</label>
+                <input type="text" id="text"/><br/>
+                <label for="password">Password</label>
+                <input type="password" id="password"/><br/>
+            </fieldset>
+            <fieldset>
+                <legend>Personel</legend>
+                <label for="Họ">Họ</label>
+                <input type="text" id="Họ"/><br/>
+                <label for="tên">Tên</label>
+                <input type="text" id="tên"/><br/>
+                <input type="radio" name="Sex" value="Nam" checked/>Nam
+                <input type="radio" name="Sex" value="Nữ"/>Nữ<br/>
+                <label>Date</label>
+                <input type="date" name="date"/><br/>
+                <label>Range</label>
+                <input type="range" name="range" min="0" min="255" step="1" value="126"/><br/>
+                <label>Màu sắc</label>
+                <input type="color" name="color" value="#fff"/>
+            </fieldset>
+        </form>
+    </body>
+</html>
